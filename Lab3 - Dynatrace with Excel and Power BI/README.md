@@ -19,7 +19,7 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 ##### 2. Enter a name for your token and select the appropriate access switches for the token, then click *Generate*.
 
-In this lab we will only need "Access problem and event feed, metrics and topology"
+In this lab we will only need **Access problem and event feed, metrics and topology**
 
 	![Add Token Name](/img/gen-my-token.PNG)
 
@@ -71,9 +71,9 @@ Copy the *Request URL* for use in the next section.
 
  1. Open Excel and create a new workbook.
 
- 2. Select: *Data > From Web*
+ 2. Select: **Data > From Web**
 
- 3. Enter your *Request URL* and append *&Api-Token=<your-API-token>
+ 3. Enter your **Request URL** and append **&Api-Token=<your-API-token>**
 
 The URL will look something like this:
 
@@ -81,54 +81,54 @@ https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/
 
 ![API Result](/img/excel-import-fromweb.PNG)
 
- 4. In the Power Query Editor window, click on *Record* next to dataResult
+ 4. In the Power Query Editor window, click on **Record** next to dataResult
 
 ![API Result](/img/bi-dataresult.PNG)
 
- 5. Click on *Record* next to entities
+ 5. Click on **Record** next to entities
 
 ![API Result](/img/bi-dataresult.PNG)
 
- 6. Click on *List*
+ 6. Click on **List**
  
 ![API Result](/img/bi-application.PNG)
 
- 7. Click on *To Table*
+ 7. Click on **To Table**
 
 ![API Result](/img/bi-app-to-table.PNG)
 
- 8. Click *OK*
+ 8. Click **OK**
 
 ![API Result](/img/bi-to-table.PNG)
 
 Now we have the data in a list but it need to be split and formatted correctly.
 
- 9. Click the icon next to *Column1* and select *Extract Values*
+ 9. Click the icon next to **Column1** and select **Extract Values**
 
 ![API Result](/img/bi-extract-values.PNG)
 
- 10 Use *Semicolon* and click *OK*
+ 10 Use **Semicolon** and click **OK**
 
 ![API Result](/img/bi-extract-values-semi.PNG)
 
- 11 Right click on *Column1* and select *Split Column* > *By Delimiter...*
+ 11 Right click on **Column1** and select **Split Column** > **By Delimiter...**
 
-	![API Result](/img/bi-data-split.PNG)
+![API Result](/img/bi-data-split.PNG)
 
- 12. Use *Semicolon* and *Each occrance of the delimiter* and click *OK*
+ 12. Use **Semicolon** and **Each occurrence of the delimiter** and click **OK**
 
-	![API Result](/img/bi-data-split-delimiter.PNG)
+![API Result](/img/bi-data-split-delimiter.PNG)
 
  13. Rename the columns by double clicking on the column name (or right click and select Rename) as follows:
 	
 	Column1.1 : TimeSpanEPOCH
 	Column1.2 : Apdex
 	
- 14. Add a Custom Column: Click *Add Column*, *Custom Column*
+ 14. Add a Custom Column: Click **Add Column**, **Custom Column**
 	
-	![API Result](/img/bi-custom-column.PNG)
+![API Result](/img/bi-custom-column.PNG)
 
- 15. Add the following then click *OK*:
+ 15. Add the following then click **OK**:
 
 	New Column Name : Time
 	Custom Column formula : = #datetime(1970, 1, 1, 0, 0, 0) + #duration(0, 0, 0, [TimeSpanEPOCH]/1000)
@@ -139,7 +139,7 @@ Now we have the data in a list but it need to be split and formatted correctly.
 
 ![API Result](/img/bi-time-desc.PNG)
 
- 17. Click *Home* > *Close and Load*
+ 17. Click **Home** > **Close and Load**
 
 ![API Result](/img/bi-close-and-load.PNG)
 
