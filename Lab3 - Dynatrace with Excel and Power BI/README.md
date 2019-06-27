@@ -1,9 +1,13 @@
 
 # Lab 3: Pull Dynatrace data into Excel using Power BI
 
-In this lab, we will pull data into Excel from Dynatrace. We are going to use Dynatrace API's and Power BI with Excel.
+In this lab is split into two parts, the first section generates an API token request URL we can use the fetch data from Dynatrace. The second part uses thius URL to import data into Excel.
+If you already have an API token and URL then jump stright to the part of this lab
 
-## Create API Token
+
+## Part 1 - Create API Token & Timeseries API Call
+
+### Create API Token
 
 First we need to create a API token.
 
@@ -19,11 +23,11 @@ In this lab we will only need "Access problem and event feed, metrics and topolo
 
 ![Add Token Name](/img/gen-my-token.PNG)
 
-3. Click the down arrow (under the edit column) to display your token. Note the token down for later use.
+3. Click the down arrow (under the edit column) to display your token. **Take note of the token for later use.**
 
 ![Add Token Name](/img/gen-my-token-result.PNG)
 
-## Access API Explorer
+### Access API Explorer
 
 In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Integration -> Dynatrace API**
 
@@ -38,7 +42,7 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 4. Click **Close**
 
 
-## Timeseries API Call 
+### Timeseries API Call 
 
 1. In the API list select **Timeseries**
 
@@ -48,12 +52,17 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 ![Tryout Timeseries API](/img/tryout-timeseries-api.PNG)
 
+4. Enter the following paremeters: 
 
+	timeseriesIdentifier: **com.dynatrace.builtin:app.apdex**
+	includeData: **true**
+	aggregationType: **COUNT**
+	reletiveTime: **month**
+	Tag (array):  **easytravel**
 
-4. Modify the Exercise 1 – AgentInstall.bat file (found on the desktop) with the appropriate information. The appropriate info can be found in the intall.bat file contained in the MSI package.
+5. Click **Execute**. If sucessful the result should be shown looking something like this:
 
-You need to collect **token** & **token** from the install.bat and populate in the Exercise 1 – AgentInstall.bat file
+![API Result](/img/api-result.PNG)
 
-Also, you'll need to change the file name referenced to the version of the MSI you have downloaded.
+## Part 2 - Create API Token & Timeseries API Call
 
-Copy the OneAgent MSI file to C:\
