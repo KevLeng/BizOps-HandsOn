@@ -13,47 +13,47 @@ First we need to create a API token.
 
 In the Dynatrace dashboard, navigate to the Configuration API: *Settings -> Integration -> Dynatrace API*
 
-1. Click Generate token button
+##### 1. Click Generate token button
 
 ![Generate Token](/img/gen-token-button.PNG)
 
-2. Enter a name for your token and select the appropriate access switches for the token, then click *Generate*.
+##### 2. Enter a name for your token and select the appropriate access switches for the token, then click *Generate*.
 
 In this lab we will only need "Access problem and event feed, metrics and topology"
 
-![Add Token Name](/img/gen-my-token.PNG)
+	![Add Token Name](/img/gen-my-token.PNG)
 
-3. Click the down arrow (under the edit column) to display your token. *Take note of the token for later use.*
+##### 3. Click the down arrow (under the edit column) to display your token. *Take note of the token for later use.*
 
-![Add Token Name](/img/gen-my-token-result.PNG)
+	![Add Token Name](/img/gen-my-token-result.PNG)
 
 ### Access API Explorer
 
 In the Dynatrace dashboard, navigate to the Configuration API: *Settings -> Integration -> Dynatrace API*
 
-1. Click *Dynatrace API Explorer*
+##### 1. Click *Dynatrace API Explorer*
 
-2. Click *Authorize*
+##### 2. Click *Authorize*
 
-3. Enter your API token under the DataExportToken (apiKey) and click *Authorise*
+##### 3. Enter your API token under the DataExportToken (apiKey) and click *Authorise*
 
 	![Authorise API with Token](/img/api-auth-key.PNG)
 
-4. Click *Close*
+##### 4. Click *Close*
 
 	![Authorise API](/img/api-auth.PNG)
 
 ### Timeseries API Call 
 
-1. In the API list select *Timeseries*
+##### 1. In the API list select *Timeseries*
 
-2. Select *GET /timeseries/{timeseriesIdentifier}*
+##### 2. Select *GET /timeseries/{timeseriesIdentifier}*
 
-3. Click *Try it out*
+##### 3. Click *Try it out*
 
 ![Tryout Timeseries API](/img/tryout-timeseries-api.PNG)
 
-4. Enter the following paremeters: 
+##### 4. Enter the following paremeters: 
 
 	timeseriesIdentifier: *com.dynatrace.builtin:app.apdex*
 	includeData: *true*
@@ -61,7 +61,7 @@ In the Dynatrace dashboard, navigate to the Configuration API: *Settings -> Inte
 	reletiveTime: *month*
 	Tag (array):  *easytravel*
 
-5. Click *Execute*. If sucessful the result should be shown looking something like this:
+##### 5. Click *Execute*. If sucessful the result should be shown looking something like this:
 
 Copy the *Request URL* for use in the next section.
 
