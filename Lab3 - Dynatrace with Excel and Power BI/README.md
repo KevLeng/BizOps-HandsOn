@@ -21,11 +21,11 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 In this lab we will only need **Access problem and event feed, metrics and topology**
 
-	![Add Token Name](/img/gen-my-token.PNG)
+![Add Token Name](/img/gen-my-token.PNG)
 
 ##### 3. Click the down arrow (under the edit column) to display your token. *Take note of the token for later use.*
 
-	![Add Token Name](/img/gen-my-token-result.PNG)
+![Add Token Name](/img/gen-my-token-result.PNG)
 
 ### Access API Explorer
 
@@ -37,11 +37,11 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 ##### 3. Enter your API token under the DataExportToken (apiKey) and click *Authorise*
 
-	![Authorise API with Token](/img/api-auth-key.PNG)
+![Authorise API with Token](/img/api-auth-key.PNG)
 
 ##### 4. Click *Close*
 
-	![Authorise API](/img/aapi-auth.PNG)
+![Authorise API](/img/aapi-auth.PNG)
 
 ### Timeseries API Call 
 
