@@ -13,11 +13,11 @@ First we need to create a API token.
 
 In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Integration -> Dynatrace API**
 
- 1. Click **Generate token**
+1. Click **Generate token**
 
 ![Generate Token](/img/gen-token-button.PNG)
 
- 2. Enter a name for your token and select the appropriate access switches for the token, then click **Generate**.
+2. Enter a name for your token and select the appropriate access switches for the token, then click **Generate**.
 
 In this lab we will only need **Access problem and event feed, metrics and topology**
 
