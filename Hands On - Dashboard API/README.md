@@ -603,8 +603,9 @@ Navigate back to the Dynatrace dashboards. The dashboard should look something l
 
 ![Dashboard](/img/dashboard-api-dashboard.PNG)
 
-If you used the same names used throughout these labs then the above dashboard should display correctly. 
-If you used other names, then you will need to change the ids used in the above JSON. The ids used in the above JSON are:
+If you used the same application names used throughout these labs (Application name: easyTravel) then the above dashboard should display correctly. 
+
+If you used different  names, then you will need to change the ids used in the above JSON. The ids used in the above JSON are:
 
 **Application Id**
 
