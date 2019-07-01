@@ -2,7 +2,9 @@
 
 In this lab, we will create a dashsboard using the Dashboard API.
 
-You will need an API token with the following permissions for this session.
+You will need an API token with the **Read configuration** and **Write Configuration** permissions for this session.
+
+![Dashboard API Permissions](/img/dashboard-api-permis.PNG)
 
 ## Step-by-step Guide - Access API Explorer
 
@@ -18,7 +20,7 @@ Authorise **ReadConfigToken (apiKey)** and **WriteConfigToken (apiKey)** for thi
 
 2. Select **POST /dashboards**
 
-![Dashboard API](/assets/dashboard-config-post.png)
+![Dashboard API](/img/dashboard-config-post.png)
 
 3. Select **Try it Out**
 
