@@ -1,4 +1,4 @@
-# Lab : Creating a Dashboard using API
+# Creating a Dashboard using API
 
 In this lab, we will create a dashsboard using the Dashboard API.
 
