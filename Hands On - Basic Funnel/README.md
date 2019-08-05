@@ -18,14 +18,15 @@ In the Dynatrace, create a new dashboard named "Basic Funnel".
 
 4. Repeat the above steps to create dashboard tiles for:
 
-  Review Page: 
-  select count(*) as "Review Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf"
+  Review Page:
+  
+  select count(*) as "Review Page Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf"
 
   Payment Page:
-  select count(*) as "Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" 
+  select count(*) as "Payement Page Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" 
 
   Finish Page:
-  select count(*) as "Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" and useraction.name="Loading of page /orange-booking-finish.jsf"
+  select count(*) as "Finish Page Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" and useraction.name="Loading of page /orange-booking-finish.jsf"
 
 When you are finished your dashboard should look something like this:
 
