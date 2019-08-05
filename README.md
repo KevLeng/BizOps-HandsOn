@@ -4,4 +4,4 @@
 
 **Advanced Dashboarding**
 
-This Repo contains the labs we are going to work though as part of the Dynatrace Perform Go Sydney 2019 event
+This Repo contains the labs we are going to work though as part of the BizOps – Bridging the Gap to the Business HOT session part of the Dynatrace Perform Go Sydney 2019 event.
