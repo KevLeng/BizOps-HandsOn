@@ -12,7 +12,7 @@ In this lab, we will create a session properties to expose business data to Dyna
    Key:  **membershipstatus**  
    Store as user action property: **true**  
    Store as session property: **true**  
-   CSS Selector:  **#loginForm\3a j_idt42**  
+   CSS Selector:  **#loginForm\:j_idt42**  
    Apply cleanup rule: **true**  
    Cleanup Rule Regex: **(.*?) Status!**  
 
