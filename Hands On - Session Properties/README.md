@@ -12,9 +12,9 @@ In this lab, we will create a session properties to expose business data to Dyna
    Expression Type: **CSS Selector**  
    Data Type: **String**  
    Key:  **membershipstatus**  
-   Store as user action property: **true**  
+   Store as user action property: **false**  
    Store as session property: **true**  
-   CSS Selector:  **#loginForm\:j_idt42**  
+   CSS Selector:  **#loginForm\:j_idt43**  
    Apply cleanup rule: **true**  
    Cleanup Rule Regex: **(.*?) status!**  
 
@@ -38,11 +38,15 @@ Now create session properties for the trip destination and booking total
    Data Type: **Double**  
    Key:  **bookingtotal**  
    Display Name: **Booking Total**
-   Store as user action property: **true**  
+   Store as user action property: **false**  
    Store as session property: **true**  
-   CSS Selector:  **#iceform\:j_idt77-11-1**  
+   CSS Selector:  **#iceform\:j_idt113-11-1**  
    Apply cleanup rule: **true**  
    Cleanup Rule Regex: **([^$][^;]*+)**  
+   
+You can view the user sessions that have the booking total value by running the following USQL: 
+
+    SELECT * FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL ORDER BY startTime DESC
    
 ## Trip Destination
 
@@ -51,6 +55,11 @@ Now create session properties for the trip destination and booking total
    Expression Type: **CSS Selector**  
    Data Type: **String**  
    Key:  **destination**  
-   Store as user action property: **true**  
+   Store as user action property: **false**  
    Store as session property: **true**  
-   CSS Selector:  **#iceform\:j_idt77-3-1**  
+   CSS Selector:  **#iceform\:j_idt126**  
+   Apply cleanup rule: **false**  
+
+You can view the user sessions that have the destination value by running the following USQL: 
+
+    SELECT * FROM usersession WHERE stringProperties.destination IS NOT NULL ORDER BY startTime DESC
