@@ -8,7 +8,6 @@ Access the easyTravel application monitoring settings
 Select **Session and User action properties** and click **Add property** and enter the following:
 
     Expression Type: **CSS Selector**
-
     Data Type: **String**
 
     Key:  **membershipstatus**
