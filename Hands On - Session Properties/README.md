@@ -1,6 +1,6 @@
 # Hands On - Creating Sessions Properties
 
-In this lab, we will create a session properties
+In this lab, we will create a session properties to expose business daTA
 
 Access the easyTravel application monitoring settings
   Applications > easyTravel > (...) Edit
