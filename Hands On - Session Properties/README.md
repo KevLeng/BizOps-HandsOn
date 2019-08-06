@@ -7,15 +7,15 @@ Access the easyTravel application monitoring settings
 
 Select **Session and User action properties** and click **Add property** and enter the following:
 
-Expression Type: **CSS Selector**
+    Expression Type: **CSS Selector**
 
-Data Type: **String**
+    Data Type: **String**
 
-Key:  **membershipstatus**
+    Key:  **membershipstatus**
 
-CSS Selector:  **#loginForm\3a j_idt42**
+    CSS Selector:  **#loginForm\3a j_idt42**
 
-Cleanup Rule Regex: **(.*?) Status!**
+    Cleanup Rule Regex: **(.*?) Status!**
 
 ![User Session Property Config](/img/usersession-config.PNG)
 
