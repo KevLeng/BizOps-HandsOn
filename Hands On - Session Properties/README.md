@@ -1,11 +1,11 @@
 # Hands On - Creating Sessions Properties
 
-In this lab, we will create a session properties to expose business daTA
+In this lab, we will create a session properties to expose business data to Dynatrace
 
-Access the easyTravel application monitoring settings
+1) Access the easyTravel application monitoring settings
   Applications > easyTravel > (...) Edit
 
-Select **Session and User action properties** and click **Add property** and enter the following:
+2) Select **Session and User action properties** and click **Add property** and enter the following:
 
     Expression Type: CSS Selector
     Data Type: String
@@ -18,3 +18,4 @@ Select **Session and User action properties** and click **Add property** and ent
 
 ![User Session Property Config](/img/usersession-config.PNG)
 
+3) Click **Save Property**
