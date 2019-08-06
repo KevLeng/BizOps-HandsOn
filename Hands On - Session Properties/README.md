@@ -22,6 +22,12 @@ In this lab, we will create a session properties to expose business data to Dyna
 
 3) Click **Save Property**
 
+It may take 5-10 mins to see results in Dynatrace because session properties are only available when the user session is completed.
+
+You can view the user sessions that have the membershipstatus set  by running the following USQL: 
+
+    SELECT * FROM usersession WHERE stringProperties.membershipstatus IS NOT NULL ORDER BY startTime DESC
+
 Now create session properties for the trip destination and booking total
 
 ## Booking Total
