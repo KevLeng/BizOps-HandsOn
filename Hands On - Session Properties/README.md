@@ -14,7 +14,7 @@ In this lab, we will create a session properties to expose business data to Dyna
    Store as session property: **true**  
    CSS Selector:  **#loginForm\:j_idt42**  
    Apply cleanup rule: **true**  
-   Cleanup Rule Regex: **(.*?) Status!**  
+   Cleanup Rule Regex: **(.*?) status!**  
 
 ![User Session Property Config](/img/usersession-config.PNG)
 
