@@ -366,166 +366,6 @@
       "chartVisible": true
     },
     {
-      "name": "",
-      "tileType": "SERVICES",
-      "configured": true,
-      "bounds": {
-        "top": 76,
-        "left": 1482,
-        "width": 152,
-        "height": 190
-      },
-      "tileFilter": {
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "SERVICE",
-        "customName": ".Net",
-        "defaultName": ".Net",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "SERVICE": {
-            "SERVICE_SOFTWARE_TECH": [
-              "DOTNET"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
-      "name": "",
-      "tileType": "HOSTS",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1330,
-        "width": 152,
-        "height": 190
-      },
-      "tileFilter": {
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "HOST",
-        "customName": "Windows",
-        "defaultName": "Windows",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "HOST": {
-            "HOST_OPERATING_SYSTEM": [
-              "1"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
-      "name": "",
-      "tileType": "HOSTS",
-      "configured": true,
-      "bounds": {
-        "top": 304,
-        "left": 1482,
-        "width": 152,
-        "height": 190
-      },
-      "tileFilter": {
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "HOST",
-        "customName": "Linux",
-        "defaultName": "Linux",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "HOST": {
-            "HOST_OPERATING_SYSTEM": [
-              "2"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
-      "name": "",
-      "tileType": "DATABASES_OVERVIEW",
-      "configured": true,
-      "bounds": {
-        "top": 532,
-        "left": 1330,
-        "width": 152,
-        "height": 190
-      },
-      "tileFilter": {
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "DATABASE",
-        "customName": "",
-        "defaultName": "Derby Client databases",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "DATABASE": {
-            "SERVICE_DATABASE_VENDOR": [
-              "DEFAULT|Derby Client"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
-      "name": "",
-      "tileType": "DATABASES_OVERVIEW",
-      "configured": true,
-      "bounds": {
-        "top": 532,
-        "left": 1482,
-        "width": 152,
-        "height": 190
-      },
-      "tileFilter": {
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "DATABASE",
-        "customName": "",
-        "defaultName": "SQL Server CE databases",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "DATABASE": {
-            "SERVICE_DATABASE_VENDOR": [
-              "DEFAULT|SQL Server CE"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
       "name": "Markdown",
       "tileType": "MARKDOWN",
       "configured": true,
@@ -554,6 +394,96 @@
         "managementZone": null
       },
       "markdown": "## Help\n---\n[Dynatrace Help](https://www.dynatrace.com/support/help/)  \n[Contact Support](https://www.dynatrace.com/support/contact-support/)  \n[What is Dynatrace?](https://www.dynatrace.com/support/help/get-started/what-is-dynatrace/)  \n[Dynatrace University](https://university.dynatrace.com/)  \n[Dynatrace Youtube](https://www.youtube.com/channel/UCcYJ-5q_AfmjQ4XTjTS0o3g)"
+    },
+    {
+      "name": "",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 1482,
+        "width": 152,
+        "height": 190
+      },
+      "tileFilter": {
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "SERVICE",
+        "customName": "Nginx Services",
+        "defaultName": "Nginx Services",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "SERVICE": {
+            "SERVICE_SOFTWARE_TECH": [
+              "NGINX"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 1330,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "AWS Hosts",
+        "defaultName": "AWS Hosts",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "HOST": {
+            "HOST_VIRTUALIZATION": [
+              "1"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 1330,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "DATABASE",
+        "customName": "Databases",
+        "defaultName": "Databases",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
     }
   ]
 }
