@@ -55,9 +55,9 @@ You can view the user sessions that have the booking total value by running the 
    Expression Type: **CSS Selector**  
    Data Type: **String**  
    Key:  **destination**  
+   CSS Selector:  **#iceform\:j_idt126**  
    Store as user action property: **false**  
    Store as session property: **true**  
-   CSS Selector:  **#iceform\:j_idt126**  
    Apply cleanup rule: **false**  
 
 You can view the user sessions that have the destination value by running the following USQL: 
