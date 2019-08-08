@@ -29,7 +29,7 @@ Authorise **ReadConfigToken (apiKey)** and **WriteConfigToken (apiKey)** for thi
 ```json
 {
   "dashboardMetadata": {
-    "name": "Executive Overview Dashboard - krl",
+    "name": "Executive Overview Dashboard",
     "shared": false,
     "sharingDetails": {
       "linkShared": true,
