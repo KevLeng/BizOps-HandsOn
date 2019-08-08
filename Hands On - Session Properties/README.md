@@ -37,10 +37,10 @@ Now create session properties for the trip destination and booking total
    Expression Type: **CSS Selector**  
    Data Type: **Double**  
    Key:  **bookingtotal**  
-   Display Name: **Booking Total**
+   CSS Selector:  **#iceform\:j_idt113-11-1**  
+   Display Name: **Booking Total**  
    Store as user action property: **false**  
    Store as session property: **true**  
-   CSS Selector:  **#iceform\:j_idt113-11-1**  
    Apply cleanup rule: **true**  
    Cleanup Rule Regex: **([^$][^;]*+)**  
    
