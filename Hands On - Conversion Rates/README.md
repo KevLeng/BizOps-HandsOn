@@ -14,5 +14,5 @@ In this lab, we will create conversion goals for the easyTravel application
 
 ![Conversion Goal](/img/conversion_goal.PNG)
 
-Check results by running this USQL:
+Check results by running this USQL:  
   SELECT * FROM usersession WHERE useraction.matchingConversionGoals IS NOT NULL
