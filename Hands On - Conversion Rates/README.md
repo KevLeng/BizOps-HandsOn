@@ -10,6 +10,5 @@ In this lab, we will create conversion goals for the easyTravel application
 2) Select **Comversion Goals** and click **Add goal** and enter the following:
 
    Name: **Successful Bookings - open final Page**  
-   Type of goal: **Destination** > **contains**  
-     **/orange-booking-finish.jsf**  
+   Type of goal: **Destination** > **contains** > **/orange-booking-finish.jsf**  
    
