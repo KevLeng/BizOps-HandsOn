@@ -28,5 +28,6 @@ First we need to mark the page (/orange-booking-finish.jsf) as a key user action
 
 ![Conversion Goal](/img/conversion_goal.PNG)
 
-Check results by running this USQL:  
-  SELECT * FROM usersession WHERE useraction.matchingConversionGoals IS NOT NULL
+Check results aginst the application: **easyTravel** > **User behavior**  
+
+![Conversion Goal](/img/conversion_goal-done.PNG)
