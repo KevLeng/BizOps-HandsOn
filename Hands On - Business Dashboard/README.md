@@ -10,8 +10,22 @@ The above dashboard has the following components:
 
 1) **User Behavior** > **easyTravel**
 
-2) Under **Top 3 user actions** click **View full details**
+2) **Top conversion goals** > **easyTravel**
 
-3) Scroll down to **Top 100 user a actions** and filter for **orange-booking-finish.jsf**
+3) **Conversion goal** > **easyTravel** > **Sucessful Bookings**
 
-![Conversion Goal](/img/conversion_goal_filter.PNG)
+4) **Bounce Rate** > **easyTravel**
+
+5) **Key user actions** > **easyTravel**
+
+6) **User Session Query**:  
+
+SELECT DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m'),AVG(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.doubleProperties.bookingtotal IS NOT NULL GROUP BY DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m')  
+
+7) **User Session Query**:  
+
+SELECT usersession.stringProperties.destination, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.destination IS NOT NULL GROUP BY usersession.stringProperties.destination  
+
+8) **User Session Query**:  
+
+SELECT usersession.stringProperties.membershipstatus, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.membershipstatus IS NOT NULL GROUP BY usersession.stringProperties.membershipstatus  
