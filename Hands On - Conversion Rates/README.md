@@ -11,4 +11,5 @@ In this lab, we will create conversion goals for the easyTravel application
 
    Name: **Successful Bookings - open final Page**  
    Type of goal: **Destination** > **contains** > **/orange-booking-finish.jsf**  
-   
+
+![Conversion Goal](/img/conversion_goal.PNG)
