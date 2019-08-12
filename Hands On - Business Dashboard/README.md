@@ -20,7 +20,7 @@ The above dashboard has the following components:
 
 6) **User Session Query** - Booking Total over Time:  
 
-SELECT DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m'),AVG(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.doubleProperties.bookingtotal IS NOT NULL GROUP BY DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m')  
+SELECT DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m'),AVG(usersession.doubleProperties.bookingtotal) AS "Revenue" FROM usersession WHERE usersession.doubleProperties.bookingtotal IS NOT NULL GROUP BY DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m')
 
 7) **User Session Query** - Booking Value by Trip Destination
 
@@ -28,4 +28,4 @@ SELECT usersession.stringProperties.destination, SUM(usersession.doublePropertie
 
 8) **User Session Query** - Booking Value by Membership Status
 
-SELECT usersession.stringProperties.membershipstatus, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.membershipstatus IS NOT NULL GROUP BY usersession.stringProperties.membershipstatus  
+SELECT usersession.stringProperties.membershipstatus, SUM(usersession.doubleProperties.bookingtotal) AS "Revenue" FROM usersession WHERE usersession.stringProperties.membershipstatus IS NOT NULL GROUP BY usersession.stringProperties.membershipstatus
