@@ -13,3 +13,6 @@ In this lab, we will create conversion goals for the easyTravel application
    Type of goal: **Destination** > **contains** > **/orange-booking-finish.jsf**  
 
 ![Conversion Goal](/img/conversion_goal.PNG)
+
+Check results by running this USQL:
+  SELECT * FROM usersession WHERE useraction.matchingConversionGoals IS NOT NULL
