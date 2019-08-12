@@ -18,14 +18,14 @@ The above dashboard has the following components:
 
 5) **Key user actions** > **easyTravel**
 
-6) **User Session Query**:  
+6) **User Session Query** - Booking Total over Time:  
 
 SELECT DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m'),AVG(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.doubleProperties.bookingtotal IS NOT NULL GROUP BY DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m')  
 
-7) **User Session Query**:  
+7) **User Session Query** - Booking Value by Trip Destination
 
 SELECT usersession.stringProperties.destination, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.destination IS NOT NULL GROUP BY usersession.stringProperties.destination  
 
-8) **User Session Query**:  
+8) **User Session Query** - Booking Value by Membership Status
 
 SELECT usersession.stringProperties.membershipstatus, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.membershipstatus IS NOT NULL GROUP BY usersession.stringProperties.membershipstatus  
