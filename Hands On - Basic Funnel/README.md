@@ -2,8 +2,7 @@
 
 In this lab, we will create a dashsboard to display a basic sales funnel.
 
-In the Dynatrace UI, create a new dashboard named "Sales Funnel".  
-  Dashboards > Create Dashboard  
+In the Dynatrace UI, create a new dashboard named "Sales Funnel" (**Dashboards** > **Create Dashboard**)  
 
 1. Add the User Sessions Query to the dashboard and configure the tile
 
