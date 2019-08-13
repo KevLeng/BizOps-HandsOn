@@ -1,4 +1,4 @@
-# Hands On - Creating Sessions Properties
+# Hands On - Creating Sessions Properties - Part 2
 
 In this lab, we will create a session properties to expose business data Booking Total and Dstination to Dynatrace
 
