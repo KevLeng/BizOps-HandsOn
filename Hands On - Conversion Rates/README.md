@@ -31,3 +31,15 @@ First we need to mark the page (/orange-booking-finish.jsf) as a key user action
 Check results aginst the application: **easyTravel** > **User behavior**  
 
 ![Conversion Goal](/img/conversion_goal-done.PNG)
+
+## Create 3 more Convertion Goals
+
+Follow the above steps to create conversion goals for:  
+  Name: Homepage  
+  User Action: Loading of page /orange.jsf  
+  
+  Name: Review  
+  Loading of page /orange-booking-review.jsf  
+  
+  Name: Payment  
+  Loading of page /orange-booking-payment.jsf
