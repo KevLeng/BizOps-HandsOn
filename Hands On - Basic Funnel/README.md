@@ -20,8 +20,9 @@ In the Dynatrace UI, create a new dashboard named "Sales Funnel" (**Dashboards**
 
   Review Page:
   
+  '''
   **select count(*) as "Review Page Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf"**
-
+'''
   Payment Page:
   
   **select count(*) as "Payement Page Requests" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf"**
