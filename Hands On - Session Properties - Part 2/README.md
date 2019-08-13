@@ -31,15 +31,15 @@ Second create the session property in Dynatrace.
 
 2) Select **Session and User action properties** and click **Add property** and enter the following:
 
-   Expression Type: **CSS Selector**  
-   Data Type: **Double**  
-   Key:  **bookingtotal**  
-   CSS Selector:  **The CSS Selector you copied above**  
-   Display Name: **Booking Total**  
-   Store as user action property: **false**  
-   Store as session property: **true**  
-   Apply cleanup rule: **true**  
-   Cleanup Rule Regex: **([^$][^;]*+)**  
+   * Expression Type: **CSS Selector**  
+   * Data Type: **Double**  
+   * Key:  **bookingtotal**  
+   * CSS Selector:  **The CSS Selector you copied above**  
+   * Display Name: **Booking Total**  
+   * Store as user action property: **false**  
+   * Store as session property: **true**  
+   * Apply cleanup rule: **true**  
+   * Cleanup Rule Regex: **([^$][^;]*+)**  
    
 You can view the user sessions that have the booking total value by running the following USQL: 
 
