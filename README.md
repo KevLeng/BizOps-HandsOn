@@ -10,8 +10,9 @@ Order of Hands on Sessions:
 
 1) Hands On - Basic Funnel
 2) Hands On - Session Properties
-3) Hands On - Conversion Rates
-4) Hands On - Business Dashboard
-5) Hands On - Sales Funnel
-6) Hands On - Dashboard API
-7) Hands On - Dynatrace with Excel and Power BI
+3) Hands On - Session Properties - Part 2
+4) Hands On - Conversion Rates
+5) Hands On - Business Dashboard
+6) Hands On - Sales Funnel
+7) Hands On - Dashboard API
+8) Hands On - Dynatrace with Excel and Power BI
