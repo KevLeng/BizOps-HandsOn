@@ -91,9 +91,9 @@ https://jlp305.dynatrace-managed.com/e/10-Sydney-Perform-2019--CreatedDate-8-8-2
 
 ![API Result](/img/excel-import-fromweb-v2.PNG)
 
-6. Click LoadAdd the following **HTTP request header parameter**
-![API Result](/img/excel-import-data-v2.PNG)
+6. Click Load
 
+![API Result](/img/excel-import-data-v2.PNG)
 
 7. You data sould be imported
 
