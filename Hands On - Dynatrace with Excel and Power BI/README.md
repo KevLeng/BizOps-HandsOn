@@ -57,10 +57,10 @@ Ensure you are using **Environment API** (top right corner of the screen)
 
 4. Enter the following paremeters: 
 
-	timeseriesIdentifier: **com.dynatrace.builtin:app.apdex**
-	includeData: **true**
-	aggregationType: **COUNT**
-	relativeTime: **month**
+	* timeseriesIdentifier: **com.dynatrace.builtin:app.apdex**
+	* includeData: **true**
+	* aggregationType: **COUNT**
+	* relativeTime: **month**
 
 5. Click **Execute**. If successful the result should be shown looking something like this:
 
