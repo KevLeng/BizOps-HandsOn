@@ -33,11 +33,11 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 1. Click **Dynatrace API Explorer**
 
-Ensure you are using **Environment API** (top right corner of the screen)
+Ensure you are using **Environment API v2** (top right corner of the screen)
 
 2. Click **Authorize**
 
-3. Enter your API token under the DataExportToken (apiKey) and click **Authorise**
+3. Enter your API token under the **DataExport** (apiKey) and click **Authorise**
 
 ![Authorise API with Token](/img/api-auth-key.PNG)
 
@@ -47,26 +47,27 @@ Ensure you are using **Environment API** (top right corner of the screen)
 
 ### Timeseries API Call 
 
-1. In the API list select **Timeseries**
+1. In the API list select **Metrics**
 
-2. Select **GET /timeseries/{timeseriesIdentifier}**
+2. Select **GET /metrics/series/{selector}**
 
 3. Click **Try it out**
 
-![Tryout Timeseries API](/img/tryout-timeseries-api.PNG)
+![Tryout Timeseries API](/img/tryout-timeseries-api-v2.PNG)
 
 4. Enter the following paremeters: 
 
-	* timeseriesIdentifier: **com.dynatrace.builtin:app.apdex**
-	* includeData: **true**
-	* aggregationType: **COUNT**
-	* relativeTime: **day**
+	* selector: **builtin:apps.web.action.apdex**
+	* from: **now-1d**
 
-5. Click **Execute**. If successful the result should be shown looking something like this:
+
+5. Change Response content type to **text/csv; header=present; charset=utf-8**
+
+6. Click **Execute**. If successful the result should be shown looking something like this:
 
 Copy the **Request URL** for use in the next section.
 
-![API Result](/img/api-result.PNG)
+![API Result](/img/api-result-v2.PNG)
 
 
 
@@ -76,79 +77,24 @@ Copy the **Request URL** for use in the next section.
 
  2. Select: **Data > From Web**
 
- 3. Enter your **Request URL** and append **&Api-Token=<your-API-token>**
+ 3. Select **Advanced**
+ 
+ 4. Enter your **Request URL** and append **&Api-Token=<your-API-token>**
 
 The URL will look something like this:
 
-https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/v1/timeseries/com.dynatrace.builtin%3Aapp.apdex?includeData=true&aggregationType=COUNT&relativeTime=day&Api-Token=1234567890
+https://jlp305.dynatrace-managed.com/e/10-Sydney-Perform-2019--CreatedDate-8-8-2019/api/v2/metrics/series/builtin%3Aapps.web.action.apdex?resolution=120&from=now-1d&Api-Token=1234567890
 
-![API Result](/img/excel-import-fromweb.PNG)
+5. Add the following **HTTP request header parameter**
 
- 4. In the Power Query Editor window, click on **Record** next to **dataResult**
+     Accept text/csv; header=present; charset=utf-8
 
-![API Result](/img/bi-dataresult.PNG)
+![API Result](/img/excel-import-fromweb-v2.PNG)
 
- 5. Click on the word **Record** next to **dataPoints**
-
-![API Result](/img/bi-datapoints.PNG)
-
- 6. Click on the word **List**
- 
-![API Result](/img/bi-application.PNG)
-
- 7. Click on **To Table**
-
-![API Result](/img/bi-app-to-table.PNG)
-
- 8. Click **OK**
-
-![API Result](/img/bi-to-table.PNG)
-
-Now we have the data in a list but it need to be split and formatted correctly.
-
- 9. Click the icon next to **Column1** and select **Extract Values**
-
-![API Result](/img/bi-extract-values.PNG)
-
- 10 Use **Semicolon** and click **OK**
-
-![API Result](/img/bi-extract-values-semi.PNG)
-
- 11 Right click on **Column1** and select **Split Column** > **By Delimiter...**
-
-![API Result](/img/bi-data-split.PNG)
-
- 12. Use **Semicolon** and **Each occurrence of the delimiter** and click **OK**
-
-![API Result](/img/bi-data-split-delimiter.PNG)
-
- 13. Rename the columns by double clicking on the column name (or right click and select Rename) as follows:
-	
-	Column1.1 : TimeSpanEPOCH
-	Column1.2 : Apdex
-	
- 14. Add a Custom Column: Click **Add Column**, **Custom Column**
-	
-![API Result](/img/bi-custom-column.PNG)
-
- 15. Add the following then click **OK**:
-
-	New Column Name : Time
-	Custom Column formula : = #datetime(1970, 1, 1, 0, 0, 0) + #duration(0, 0, 0, [TimeSpanEPOCH]/1000)
-
-![API Result](/img/bi-custom-column-config.PNG)
-
- 16. Click the icon next to the Time Column and select *Sort Descending*
-
-![API Result](/img/bi-time-desc.PNG)
-
- 17. Click **Home** > **Close and Load**
-
-![API Result](/img/bi-close-and-load.PNG)
+6. Click LoadAdd the following **HTTP request header parameter**
+![API Result](/img/excel-import-data-v2.PNG)
 
 
-![API Result](/img/excel-initial-data.PNG)
+7. You data sould be imported
 
-18. Format the time column to be time and date - e.g. hh:mm dd/mm/yyyy
-
-![API Result](/img/excel-formatted-data.PNG)
+![API Result](/img/excel-formatted-data-v2.PNG)
