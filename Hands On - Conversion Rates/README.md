@@ -36,10 +36,10 @@ Check results aginst the application: **easyTravel** > **User behavior**
 
 Follow the above steps to create conversion goals for:  
   Name: Homepage  
-  User Action: Loading of page /orange.jsf  
+  Destination > contains > **Loading of page /orange.jsf**  
   
   Name: Review  
-  Loading of page /orange-booking-review.jsf  
+  Destination > contains > **/orange-booking-review.jsf**  
   
   Name: Payment  
-  Loading of page /orange-booking-payment.jsf
+  Destination > contains > **/orange-booking-payment.jsf**
