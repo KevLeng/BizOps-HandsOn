@@ -13,19 +13,17 @@ First get the CSS selector for the Booking Total field.
 4) Right click on the <span> and select **Copy** > **Copy Selector**
   
 
+Second create the session property in Dynatrace.
+
 1) Access the easyTravel application monitoring settings
   Applications > easyTravel > (...) Edit
 
-2) S
-
-
-
-4) Select **Session and User action properties** and click **Add property** and enter the following:
+2) Select **Session and User action properties** and click **Add property** and enter the following:
 
    Expression Type: **CSS Selector**  
    Data Type: **Double**  
    Key:  **bookingtotal**  
-   CSS Selector:  **#iceform\\:j_idt113-11-1**  
+   CSS Selector:  **The CSS Selector you copied above**  
    Display Name: **Booking Total**  
    Store as user action property: **false**  
    Store as session property: **true**  
