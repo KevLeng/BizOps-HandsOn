@@ -54,7 +54,7 @@ For the trip destination, back in easyTravel:
 
 ![easyTravel Step 3](/img/easytravel-dest-step3.png)
 
-2) Right click on the td element and select **Copy** > **Copy Selector**
+2) Right click on the span element and select **Copy** > **Copy Selector**
 
 ![easyTravel Step 4](/img/easytravel-dest-step4.png)
 
