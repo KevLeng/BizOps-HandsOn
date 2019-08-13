@@ -18,6 +18,10 @@ The above dashboard has the following components:
 
 5) **Key user actions** > **easyTravel**
 
+6) **User Session Query** - Revenue
+
+    SELECT SUM(doubleProperties.bookingtotal) AS "Revenue (USD)" FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL
+   
 6) **User Session Query** - Booking Total over Time:  
 
 SELECT DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m'),AVG(usersession.doubleProperties.bookingtotal) AS "Revenue" FROM usersession WHERE usersession.doubleProperties.bookingtotal IS NOT NULL GROUP BY DATETIME(starttime, 'MM/dd/yyyy hh:mm', '30m')
