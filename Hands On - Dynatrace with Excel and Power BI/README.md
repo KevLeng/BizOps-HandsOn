@@ -70,7 +70,7 @@ Copy the **Request URL** for use in the next section.
 
 
 
-## Part 2 - Create API Token & Timeseries API Call
+## Section 2 - Create API Token & Timeseries API Call
 
  1. Open Excel and create a new workbook.
 
