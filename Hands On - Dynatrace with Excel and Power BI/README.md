@@ -55,7 +55,7 @@ Ensure you are using **Environment API v2** (top right corner of the screen)
 
 ![Tryout Timeseries API](/img/tryout-timeseries-api-v2.PNG)
 
-4. Enter the following paremeters: 
+4. Enter the following parameters: 
 
 	* selector: **builtin:apps.web.action.apdex**
 	* from: **now-1d**
