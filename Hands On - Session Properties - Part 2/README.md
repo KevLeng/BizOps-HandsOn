@@ -7,12 +7,17 @@ In this lab, we will create a session properties to expose business data Booking
 First get the CSS selector for the Booking Total field.
 
 1) Assess the easyTravel homepage (the URL provied to you)
-2) Seach for a destination e.g. Gold Coast
-3) Login with username: **janet** and password: **janet**
-4) Right click on the Round-trip ticket price $ value and click **inspect**
-4) Right click on the <span> and select **Copy** > **Copy Selector**
-  
+2) Seach for a destination e.g. Gold Coast and click **Book Now**
 
+![easyTravel Step 1](/img/easytravel-step1.PNG)
+
+3) Login with username: **janet** and password: **janet** and click **Next**
+
+![easyTravel Step 2](/img/easytravel-step2.PNG)
+
+4) Right click on the Round-trip ticket price $ value and click **inspect**
+5) Right click on the <span> and select **Copy** > **Copy Selector**
+  
 Second create the session property in Dynatrace.
 
 1) Access the easyTravel application monitoring settings
