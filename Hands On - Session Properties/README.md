@@ -9,14 +9,14 @@ In this lab, we will create a session properties to expose business data to Dyna
 
 2) Select **Session and User action properties** and click **Add property** and enter the following:
 
-   Expression Type: **CSS Selector**  
-   Data Type: **String**  
-   Key:  **membershipstatus**  
-   CSS Selector:  **#loginForm\\:j_idt43**  
-   Store as user action property: **false**  
-   Store as session property: **true**  
-   Apply cleanup rule: **true**  
-   Cleanup Rule Regex: **(.*?) status!**  
+   * Expression Type: **CSS Selector**  
+   * Data Type: **String**  
+   * Key:  **membershipstatus**  
+   * CSS Selector:  **#loginForm\\:j_idt43**  
+   * Store as user action property: **false**  
+   * Store as session property: **true**  
+   * Apply cleanup rule: **true**  
+   * Cleanup Rule Regex: **(.*?) status!**  
 
 ![User Session Property Config](/img/usersession-config.PNG)
 
