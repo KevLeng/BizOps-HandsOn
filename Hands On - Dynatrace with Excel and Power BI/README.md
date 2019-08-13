@@ -80,7 +80,7 @@ Copy the **Request URL** for use in the next section.
 
 The URL will look something like this:
 
-https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/v1/timeseries/com.dynatrace.builtin%3Aapp.apdex?includeData=true&aggregationType=COUNT&relativeTime=month&Api-Token=1234567890
+https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/v1/timeseries/com.dynatrace.builtin%3Aapp.apdex?includeData=true&aggregationType=COUNT&relativeTime=day&Api-Token=1234567890
 
 ![API Result](/img/excel-import-fromweb.PNG)
 
