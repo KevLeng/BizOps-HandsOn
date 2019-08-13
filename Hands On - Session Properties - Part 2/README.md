@@ -19,7 +19,7 @@ First get the CSS selector for the Booking Total field.
 
 ![easyTravel Step 3](/img/easytravel-step3.png)
 
-5) Right click on the <span> and select **Copy** > **Copy Selector**
+5) Right click on the td element and select **Copy** > **Copy Selector**
 
 ![easyTravel Step 4](/img/easytravel-step4.png)
 
