@@ -34,14 +34,15 @@ Check results aginst the application: **easyTravel** > **User behavior**
 
 ## Create 3 more Convertion Goals
 
-Follow the above steps to create conversion goals for:  
-  Name: Homepage  
-  Type of goal: User Action  
-  Rule applies to: Load actions  
-  Rule: Action Name > begins with > **Loading of page /orange.jsf**  
+Follow the above steps to create 3 more conversion goals for:  
+
+  * Name: Homepage  
+  * Type of goal: User Action  
+  * Rule applies to: Load actions  
+  * Rule: Action Name > begins with > **Loading of page /orange.jsf**  
   
-  Name: Review  
-  Type of goal: Destination > contains > **/orange-booking-review.jsf**  
+  * Name: Review  
+  * Type of goal: Destination > contains > **/orange-booking-review.jsf**  
   
-  Name: Payment  
-  Type of goal: Destination > contains > **/orange-booking-payment.jsf**
+  * Name: Payment  
+  * Type of goal: Destination > contains > **/orange-booking-payment.jsf**
