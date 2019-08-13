@@ -60,7 +60,6 @@ Ensure you are using **Environment API v2** (top right corner of the screen)
 	* selector: **builtin:apps.web.action.apdex**
 	* from: **now-1d**
 
-
 5. Change Response content type to **text/csv; header=present; charset=utf-8**
 
 ![Tryout Timeseries API](/img/tryout-timeseries-api-header-v2.PNG)
@@ -89,7 +88,8 @@ https://jlp305.dynatrace-managed.com/e/10-Sydney-Perform-2019--CreatedDate-8-8-2
 
 5. Add the following **HTTP request header parameter**
 
-     Accept text/csv; header=present; charset=utf-8
+     Accept 
+     text/csv; header=present; charset=utf-8
 
 ![API Result](/img/excel-import-fromweb-v2.PNG)
 
