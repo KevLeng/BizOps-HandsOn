@@ -9,6 +9,9 @@ First get the CSS selector for the Booking Total field.
 1) Assess the easyTravel homepage (the URL provied to you)
 2) Seach for a destination e.g. Gold Coast
 3) Login with username: **janet** and password: **janet**
+4) Right click on the Round-trip ticket price $ value and click **inspect**
+4) Right click on the <span> and select **Copy** > **Copy Selector**
+  
 
 1) Access the easyTravel application monitoring settings
   Applications > easyTravel > (...) Edit
