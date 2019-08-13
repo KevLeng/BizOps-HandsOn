@@ -23,6 +23,7 @@ First get the **CSS selector** for the Booking Total field.
 
 ![easyTravel Step 4](/img/easytravel-step4.png)
 
+
 Second create the session property in Dynatrace.
 
 
@@ -47,7 +48,18 @@ You can view the user sessions that have the booking total value by running the 
    
 ## Trip Destination
 
-Do the above steps for destination
+For the trip destination, back in easyTravel:
+
+1) Right click on the Destination value and click **inspect**
+
+![easyTravel Step 3](/img/easytravel-dest-step3.png)
+
+2) Right click on the td element and select **Copy** > **Copy Selector**
+
+![easyTravel Step 4](/img/easytravel-dest-step3.png)
+
+
+Create the session property in Dynatrace.
 
 1) Select **Session and User action properties** and click **Add property** and enter the following:
 
