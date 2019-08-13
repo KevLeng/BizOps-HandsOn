@@ -9,16 +9,22 @@ First get the CSS selector for the Booking Total field.
 1) Assess the easyTravel homepage (the URL provied to you)
 2) Seach for a destination e.g. Gold Coast and click **Book Now**
 
-![easyTravel Step 1](/img/easytravel-step1.PNG)
+![easyTravel Step 1](/img/easytravel-step1.png)
 
 3) Login with username: **janet** and password: **janet** and click **Next**
 
-![easyTravel Step 2](/img/easytravel-step2.PNG)
+![easyTravel Step 2](/img/easytravel-step2.png)
 
 4) Right click on the Round-trip ticket price $ value and click **inspect**
+
+![easyTravel Step 3](/img/easytravel-step3.png)
+
 5) Right click on the <span> and select **Copy** > **Copy Selector**
-  
+
+![easyTravel Step 4](/img/easytravel-step4.png)
+
 Second create the session property in Dynatrace.
+
 
 1) Access the easyTravel application monitoring settings
   Applications > easyTravel > (...) Edit
@@ -41,7 +47,9 @@ You can view the user sessions that have the booking total value by running the 
    
 ## Trip Destination
 
-5) Select **Session and User action properties** and click **Add property** and enter the following:
+Do the above steps for destination
+
+1) Select **Session and User action properties** and click **Add property** and enter the following:
 
    Expression Type: **CSS Selector**  
    Data Type: **String**  
