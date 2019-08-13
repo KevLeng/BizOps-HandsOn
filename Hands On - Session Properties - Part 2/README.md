@@ -54,7 +54,7 @@ Do the above steps for destination
    * Expression Type: **CSS Selector**  
    * Data Type: **String**  
    * Key:  **destination**  
-   * CSS Selector:  **#iceform\\:j_idt126**  
+   * CSS Selector:  **The CSS Selector you copied above**
    * Store as user action property: **false**  
    * Store as session property: **true**  
    * Apply cleanup rule: **false**  
