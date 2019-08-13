@@ -150,3 +150,5 @@ Now we have the data in a list but it need to be split and formatted correctly.
 ![API Result](/img/excel-initial-data.PNG)
 
 18. Format the time column to be time and date - e.g. hh:mm dd/mm/yyyy
+
+![API Result](/img/excel-formatted-data.PNG)
