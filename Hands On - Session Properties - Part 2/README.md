@@ -51,13 +51,13 @@ Do the above steps for destination
 
 1) Select **Session and User action properties** and click **Add property** and enter the following:
 
-   Expression Type: **CSS Selector**  
-   Data Type: **String**  
-   Key:  **destination**  
-   CSS Selector:  **#iceform\\:j_idt126**  
-   Store as user action property: **false**  
-   Store as session property: **true**  
-   Apply cleanup rule: **false**  
+   * Expression Type: **CSS Selector**  
+   * Data Type: **String**  
+   * Key:  **destination**  
+   * CSS Selector:  **#iceform\\:j_idt126**  
+   * Store as user action property: **false**  
+   * Store as session property: **true**  
+   * Apply cleanup rule: **false**  
 
 You can view the user sessions that have the destination value by running the following USQL: 
 
