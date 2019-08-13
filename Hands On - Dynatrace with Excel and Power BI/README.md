@@ -63,6 +63,8 @@ Ensure you are using **Environment API v2** (top right corner of the screen)
 
 5. Change Response content type to **text/csv; header=present; charset=utf-8**
 
+![Tryout Timeseries API](/img/tryout-timeseries-api-header-v2.PNG)
+
 6. Click **Execute**. If successful the result should be shown looking something like this:
 
 Copy the **Request URL** for use in the next section.
