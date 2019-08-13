@@ -88,11 +88,11 @@ https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/
 
 ![API Result](/img/bi-dataresult.PNG)
 
- 5. Click on **Record** next to entities
+ 5. Click on the word **Record** next to entities
 
 ![API Result](/img/bi-datapoints.PNG)
 
- 6. Click on **List**
+ 6. Click on the word **List**
  
 ![API Result](/img/bi-application.PNG)
 
