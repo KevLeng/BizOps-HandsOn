@@ -36,12 +36,12 @@ The above dashboard has the following components:
        
 10) **User Session Query** - Booking Value by Trip Destination
 
-       SELECT usersession.stringProperties.destination, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.destination IS NOT NULL GROUP BY usersession.stringProperties.destination  
+        SELECT usersession.stringProperties.destination, SUM(usersession.doubleProperties.bookingtotal) FROM usersession WHERE usersession.stringProperties.destination IS NOT NULL GROUP BY usersession.stringProperties.destination  
 
 11) **User Session Query** - Revenue by Loyalty User
 
-       SELECT userId AS "Customer", country AS "Origin Country", stringProperties.membershipstatus AS "Loyalty Status", SUM(doubleProperties.bookingtotal) AS "Revenue", AVG(doubleProperties.bookingtotal) AS "Average Trip Spend" FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL AND CITY IS NOT NULL AND userId IS NOT NULL AND stringProperties.membershipstatus  IN ("Gold", "Platinum", "Silver") GROUP BY userId, country, stringProperties.membershipstatus ORDER BY sum(doubleProperties.bookingtotal) DESC
+        SELECT userId AS "Customer", country AS "Origin Country", stringProperties.membershipstatus AS "Loyalty Status", SUM(doubleProperties.bookingtotal) AS "Revenue", AVG(doubleProperties.bookingtotal) AS "Average Trip Spend" FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL AND CITY IS NOT NULL AND userId IS NOT NULL AND stringProperties.membershipstatus  IN ("Gold", "Platinum", "Silver") GROUP BY userId, country, stringProperties.membershipstatus ORDER BY sum(doubleProperties.bookingtotal) DESC
        
 12) **User Session Query** - Revenue by Purchasing City
 
-       SELECT city AS "Origin City", country AS "Origin Country", SUM(doubleProperties.bookingtotal) AS "Revenue", AVG(doubleProperties.bookingtotal) AS "Average Trip Spend" FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL AND CITY IS NOT NULL GROUP BY city, country ORDER BY sum(doubleProperties.bookingtotal) DESC
+        SELECT city AS "Origin City", country AS "Origin Country", SUM(doubleProperties.bookingtotal) AS "Revenue", AVG(doubleProperties.bookingtotal) AS "Average Trip Spend" FROM usersession WHERE doubleProperties.bookingtotal IS NOT NULL AND CITY IS NOT NULL GROUP BY city, country ORDER BY sum(doubleProperties.bookingtotal) DESC
