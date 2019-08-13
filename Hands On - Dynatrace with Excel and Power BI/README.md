@@ -33,6 +33,8 @@ In the Dynatrace dashboard, navigate to the Configuration API: **Settings -> Int
 
 1. Click **Dynatrace API Explorer**
 
+Ensure you are using **Environment API** (top right corner of the screen)
+
 2. Click **Authorize**
 
 3. Enter your API token under the DataExportToken (apiKey) and click **Authorise**
