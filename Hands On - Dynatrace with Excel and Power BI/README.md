@@ -84,7 +84,7 @@ https://jlp305.dynatrace-managed.com/e/3afd805d-a30e-42f9-af96-d06b000df230/api/
 
 ![API Result](/img/excel-import-fromweb.PNG)
 
- 4. In the Power Query Editor window, click on **Record** next to dataResult
+ 4. In the Power Query Editor window, click on **Record** next to **dataResult**
 
 ![API Result](/img/bi-dataresult.PNG)
 
