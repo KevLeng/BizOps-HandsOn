@@ -24,37 +24,37 @@ Finish
     
 ### Abandons
 
-Homepage  
+Homepage - USQL
 
     select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name!="Loading of page /orange-booking-review.jsf"  
     
-Review  
+Review - USQL
       
     select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name!="Loading of page /orange-booking-payment.jsf"  
       
-Payment  
+Payment - USQL
     
     select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" and useraction.name!="Loading of page /orange-booking-finish.jsf"  
 
-Finish  
+Finish - USQL
      
     select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf " and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" and useraction.name="Loading of page /orange-booking-finish.jsf"
 
 ### Errors
 
-Homepage  
+Homepage - USQL
       
      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange.jsf"
     
-Review
+Review - USQL
      
      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-review.jsf"
       
-Payment
+Payment - USQL
      
      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-payment.jsf"
 
-Finish
+Finish - USQL
      
      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-finish.jsf"
 
