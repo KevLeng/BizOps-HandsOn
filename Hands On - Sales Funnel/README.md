@@ -11,6 +11,20 @@ Add the following elements to the dashboard:
 ### Abandons
 
 Homepage  
+    Conversion Goal > easyTravel > Homepage
+    
+Review  
+    Conversion Goal > easyTravel > Review
+      
+Payment  
+    Conversion Goal > easyTravel > Payment
+    
+Finish  
+    Conversion Goal > easyTravel > Sucessful Bookings - open Final Page
+    
+### Abandons
+
+Homepage  
 
     select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name!="Loading of page /orange-booking-review.jsf"  
     
