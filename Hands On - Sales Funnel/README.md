@@ -22,8 +22,21 @@ Payment
 Finish
      select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf " and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name="Loading of page /orange-booking-payment.jsf" and useraction.name="Loading of page /orange-booking-finish.jsf"
 
+### Errors
 
+Homepage  
+      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange.jsf"
+    
+Review
+      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-review.jsf"
+      
+Payment
+      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-payment.jsf"
 
+Finish
+      select sum(errorCount) as "Errors" from useraction where name="Loading of page /orange-booking-finish.jsf"
+
+      
 When you are finished your dashboard should look something like this:
 
 ![Dashboard Basic Funnel](/img/usql-basic-funnel.PNG)
