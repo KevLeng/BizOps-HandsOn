@@ -10,11 +10,11 @@ Add the following elements to the dashboard:
 
 ### Abandons
 
-Homepage
-'''
+Homepage  
+
 select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name!="Loading of page /orange-booking-review.jsf"  
-'''    
-Review
+    
+Review  
       select count(*) as "Abandons" from usersession where useraction.name="Loading of page /orange.jsf" and useraction.name="Loading of page /orange-booking-review.jsf" and useraction.name!="Loading of page /orange-booking-payment.jsf"  
       
 Payment
