@@ -2,7 +2,7 @@
 
 In this lab, we will build on the Basic Funnel we created earlier to create this dashsboard
 
-![USQL Icon](/img/sales-funnel-done.PNG)
+![USQL Icon](/img/sales-funnel-done.png)
 
 In the Dynatrace UI, edit the dashboard you created during the Basic Funnel exercise.
 
